@@ -1,0 +1,35 @@
+.container {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header-content {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+}
+
+.square {
+    display: inline-block;
+    width:200px;
+    height:200px;
+    background-color:#ccc;
+    cursor:pointer;
+}
+
+.blue {
+    background-color:blue;
+}
+.red {
+    background-color:red;
+}
+.green {
+    background-color:green;
+}
+.yellow {
+    background-color:yellow;
+}

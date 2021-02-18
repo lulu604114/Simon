@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="./node_modules/vue/dist/vue.js" ></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div id="app">
+        <div class="header">
+            <div class="header-content">
+                <button class="btn" @click="newGame()">
+                    NOUVELLE PARTIE
+                </button>
+                <div class="score">SCORE : {{ score }}</div>
+            </div>
+            <hr class="separator">
+        </div>
+        <div>
+            <span class="square" @click="addElementToUserSequence('topLeft')" :class="{ blue: topLeft }"></span>
+            <span class="square" @click="addElementToUserSequence('topRight')" :class="{ red: topRight }"></span>
+        </div>
+        <div>
+            <span class="square" @click="addElementToUserSequence('bottomLeft')" :class="{ green: bottomLeft }"></span>
+            <span class="square" @click="addElementToUserSequence('bottomRight')" :class="{ yellow: bottomRight }"></span>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="./app.js" ></script>
+</body>
+</html>
